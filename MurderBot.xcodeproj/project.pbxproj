@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A52E43EE25C8903B0028EF38 /* RoundCorneredRectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52E43ED25C8903B0028EF38 /* RoundCorneredRectangle.swift */; };
+		A5651EF025C88A1A00DED5DC /* Plot.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5651EEF25C88A1A00DED5DC /* Plot.swift */; };
 		A580319525C7ADA1009756EB /* MurderBotApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A580319425C7ADA1009756EB /* MurderBotApp.swift */; };
 		A580319725C7ADA1009756EB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A580319625C7ADA1009756EB /* ContentView.swift */; };
 		A580319925C7ADA3009756EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A580319825C7ADA3009756EB /* Assets.xcassets */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A52E43ED25C8903B0028EF38 /* RoundCorneredRectangle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundCorneredRectangle.swift; sourceTree = "<group>"; };
+		A5651EEF25C88A1A00DED5DC /* Plot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plot.swift; sourceTree = "<group>"; };
 		A580319125C7ADA1009756EB /* MurderBot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MurderBot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A580319425C7ADA1009756EB /* MurderBotApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MurderBotApp.swift; sourceTree = "<group>"; };
 		A580319625C7ADA1009756EB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -61,6 +65,8 @@
 				A580319425C7ADA1009756EB /* MurderBotApp.swift */,
 				A580319625C7ADA1009756EB /* ContentView.swift */,
 				A58031B425C7D9A7009756EB /* FilledButton.swift */,
+				A52E43ED25C8903B0028EF38 /* RoundCorneredRectangle.swift */,
+				A5651EEF25C88A1A00DED5DC /* Plot.swift */,
 				A580319825C7ADA3009756EB /* Assets.xcassets */,
 				A580319D25C7ADA3009756EB /* Info.plist */,
 				A580319A25C7ADA3009756EB /* Preview Content */,
@@ -153,9 +159,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5651EF025C88A1A00DED5DC /* Plot.swift in Sources */,
 				A580319725C7ADA1009756EB /* ContentView.swift in Sources */,
 				A580319525C7ADA1009756EB /* MurderBotApp.swift in Sources */,
 				A58031B525C7D9A7009756EB /* FilledButton.swift in Sources */,
+				A52E43EE25C8903B0028EF38 /* RoundCorneredRectangle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
