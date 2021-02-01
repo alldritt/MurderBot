@@ -39,10 +39,10 @@ struct CardView: View {
     @ObservedObject var plotFetch: Plot.Fetch
     @State var showActivity = true
 
-    let cardColors = [#colorLiteral(red: 0.7265671492, green: 0.7860677242, blue: 0.7937102318, alpha: 1), #colorLiteral(red: 0.8190054893, green: 0.8204569221, blue: 0.7675603628, alpha: 1), #colorLiteral(red: 0.7900114655, green: 0.8009047508, blue: 0.7654793262, alpha: 1), #colorLiteral(red: 0.9045919776, green: 0.9105549455, blue: 0.8752011657, alpha: 1), #colorLiteral(red: 0.5154729486, green: 0.5264404416, blue: 0.486608386, alpha: 1), #colorLiteral(red: 0.7469534278, green: 0.8222278953, blue: 0.8033685088, alpha: 1), #colorLiteral(red: 0.9165374637, green: 0.9220481515, blue: 0.9042716622, alpha: 1), #colorLiteral(red: 0.8401653171, green: 0.855901897, blue: 0.8247912526, alpha: 1), #colorLiteral(red: 0.8039962649, green: 0.8246852756, blue: 0.7934988141, alpha: 1), #colorLiteral(red: 0.8850758672, green: 0.8908110261, blue: 0.8642533422, alpha: 1)]
-    let cardHeightScale = CGFloat(1.65)
-    let cardCornerRadius = CGFloat(12)
-    let cardShadowRadius = CGFloat(4)
+    private let cardColors = [#colorLiteral(red: 0.7265671492, green: 0.7860677242, blue: 0.7937102318, alpha: 1), #colorLiteral(red: 0.8190054893, green: 0.8204569221, blue: 0.7675603628, alpha: 1), #colorLiteral(red: 0.7900114655, green: 0.8009047508, blue: 0.7654793262, alpha: 1), #colorLiteral(red: 0.9045919776, green: 0.9105549455, blue: 0.8752011657, alpha: 1), #colorLiteral(red: 0.5154729486, green: 0.5264404416, blue: 0.486608386, alpha: 1), #colorLiteral(red: 0.7469534278, green: 0.8222278953, blue: 0.8033685088, alpha: 1), #colorLiteral(red: 0.9165374637, green: 0.9220481515, blue: 0.9042716622, alpha: 1), #colorLiteral(red: 0.8401653171, green: 0.855901897, blue: 0.8247912526, alpha: 1), #colorLiteral(red: 0.8039962649, green: 0.8246852756, blue: 0.7934988141, alpha: 1), #colorLiteral(red: 0.8850758672, green: 0.8908110261, blue: 0.8642533422, alpha: 1)]
+    private let cardHeightScale = CGFloat(1.65)
+    private let cardCornerRadius = CGFloat(12)
+    private let cardShadowRadius = CGFloat(4)
 
     private func calcCardSize(_ size: CGSize) -> CGSize {
         let h = floor(size.width * cardHeightScale)
@@ -64,7 +64,8 @@ struct CardView: View {
             let cardSize = calcCardSize(geo.size)
             let cardColor = cardColors.randomElement()!
 
-            if let plot = plotFetch.plot {
+            if let plot = plotFetch.plot { // Do we have a plot yet?
+                // ...yes
                 VStack {
                     VStack {
                         Text(plot.plot)
@@ -89,6 +90,7 @@ struct CardView: View {
                     })
             }
             else {
+                // ...no
                 VStack {
                     VStack() {
                         let textColor = Color(UIColor.gray)
