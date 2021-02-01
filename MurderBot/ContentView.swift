@@ -38,6 +38,7 @@ struct CardView: View {
     //  - displaying a loaded plot
     //
     
+    @Environment(\.openURL) var openURL
     @ObservedObject var plotFetch: Plot.Fetch
     @State var showActivity = true
 
@@ -82,6 +83,10 @@ struct CardView: View {
                 .shadow(radius: 4)
                 .overlay(CardOverlay(text: String(plot.seed)),
                          alignment: .bottomTrailing)
+                .gesture(LongPressGesture(minimumDuration: 1) // Long Press views plot on https://midsomerplots.net
+                    .onEnded { _ in
+                        openURL(URL(string: "https://midsomerplots.net/#\(plot.seed)")!)
+                    })
             }
             else {
                 VStack {
@@ -92,7 +97,7 @@ struct CardView: View {
                             ActivityIndicatorView(isVisible: $showActivity, type: .scalingDots)
                                 .frame(width: 20, height: 20)
                                 .foregroundColor(textColor)
-                            Text("Loading...")
+                            Text("Loading \(plotFetch.seed)...")
                                 .font(.caption)
                                 .foregroundColor(textColor)
                         }
