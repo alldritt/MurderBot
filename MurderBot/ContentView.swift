@@ -123,7 +123,7 @@ struct CardOverlay: View {
                 .padding(EdgeInsets(top: 5, leading: 7, bottom: 5, trailing: 9))
                 .foregroundColor(.black)
         }
-        .background(RoundedCorners(tl: 8, tr: 0, bl: 0, br: 0).fill(Color.white.opacity(0.65)))
+        .background(RoundedCorners(tl: 8, tr: 0, bl: 0, br: 12).fill(Color.white.opacity(0.65)))
     }
 }
 
