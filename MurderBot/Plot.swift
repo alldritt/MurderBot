@@ -18,11 +18,11 @@ import Foundation
 //  The Plot struct models a plot.  The Plot.Fetch class queries the https://midsomerplots.net server for a plot.
 
 struct Plot: Codable, Identifiable {
-    var id: Int {
+    var id: UInt {
         return seed
     }
     let plot: String
-    let seed: Int
+    let seed: UInt
     
     class Fetch: ObservableObject, Hashable {
         let seed: UInt
