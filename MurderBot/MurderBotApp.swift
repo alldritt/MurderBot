@@ -11,7 +11,12 @@ import SwiftUI
 struct MurderBotApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            #if os(iOS)
+            ContentViewiOS()
+            #endif
+            #if os(tvOS)
+            ContentViewTVOS()
+            #endif
         }
     }
 }

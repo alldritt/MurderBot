@@ -24,8 +24,10 @@ struct Plot: Codable, Identifiable {
     let plot: String
     let seed: UInt
     
-    class Fetch: ObservableObject, Hashable {
-        let seed: UInt
+    class Fetch: ObservableObject, Hashable, Identifiable {
+        private (set) var seed: UInt
+        
+        var id: UInt { seed }
 
         //  Conform to Equitable
         static func == (lhs: Fetch, rhs: Fetch) -> Bool {
@@ -49,9 +51,30 @@ struct Plot: Codable, Identifiable {
             getPlot()
         }
         
+        public func regenerate() {
+            seed = UInt.random(in: 0...999999999)
+            plot = nil
+            getPlot()
+        }
+        
         private func getPlot() {
             let url = URL(string: "https://midsomerplots.acrossthecloud.net/plot?seed=\(seed)")!
             
+            #if true
+            Task {
+                do {
+                    let (data, _) = try await URLSession.shared.data(from: url)
+                    let plot = try JSONDecoder().decode(Plot.self, from: data)
+                    
+                    await MainActor.run {
+                        self.plot = plot
+                    }
+                }
+                catch (let e) {
+                    print("Exception \(e)")
+                }
+            }
+            #else
             URLSession.shared.dataTask(with: url) {(data, response, error) in
                 do {
                     if let plotData = data {
@@ -67,6 +90,7 @@ struct Plot: Codable, Identifiable {
                     print("Error")
                 }
             }.resume()
+            #endif
         }
     }
 }

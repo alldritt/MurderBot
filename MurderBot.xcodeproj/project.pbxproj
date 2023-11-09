@@ -3,27 +3,34 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A507521E29E779AD00090B52 /* ContentViewTVOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = A507521D29E779AD00090B52 /* ContentViewTVOS.swift */; platformFilters = (tvos, ); };
+		A507522029E77A4900090B52 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A507521F29E77A4900090B52 /* CardView.swift */; };
+		A507522329E90EE200090B52 /* Shimmer in Frameworks */ = {isa = PBXBuildFile; productRef = A507522229E90EE200090B52 /* Shimmer */; };
+		A507522629E9122900090B52 /* SwiftfulLoadingIndicators in Frameworks */ = {isa = PBXBuildFile; productRef = A507522529E9122900090B52 /* SwiftfulLoadingIndicators */; };
 		A52E43EE25C8903B0028EF38 /* RoundCorneredRectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52E43ED25C8903B0028EF38 /* RoundCorneredRectangle.swift */; };
+		A53979B929E93C0100959763 /* ProgressIndicatorView in Frameworks */ = {isa = PBXBuildFile; productRef = A53979B829E93C0100959763 /* ProgressIndicatorView */; };
 		A5651EF025C88A1A00DED5DC /* Plot.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5651EEF25C88A1A00DED5DC /* Plot.swift */; };
 		A580319525C7ADA1009756EB /* MurderBotApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A580319425C7ADA1009756EB /* MurderBotApp.swift */; };
-		A580319725C7ADA1009756EB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A580319625C7ADA1009756EB /* ContentView.swift */; };
+		A580319725C7ADA1009756EB /* ContentViewiOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = A580319625C7ADA1009756EB /* ContentViewiOS.swift */; platformFilter = ios; };
 		A580319925C7ADA3009756EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A580319825C7ADA3009756EB /* Assets.xcassets */; };
 		A580319C25C7ADA3009756EB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A580319B25C7ADA3009756EB /* Preview Assets.xcassets */; };
-		A58031A625C7ADE4009756EB /* CardStack in Frameworks */ = {isa = PBXBuildFile; productRef = A58031A525C7ADE4009756EB /* CardStack */; };
+		A58031A625C7ADE4009756EB /* CardStack in Frameworks */ = {isa = PBXBuildFile; platformFilter = ios; productRef = A58031A525C7ADE4009756EB /* CardStack */; };
 		A58031AC25C7D2BF009756EB /* ActivityIndicatorView in Frameworks */ = {isa = PBXBuildFile; productRef = A58031AB25C7D2BF009756EB /* ActivityIndicatorView */; };
-		A58031B525C7D9A7009756EB /* FilledButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58031B425C7D9A7009756EB /* FilledButton.swift */; };
+		A58031B525C7D9A7009756EB /* FilledButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58031B425C7D9A7009756EB /* FilledButton.swift */; platformFilter = ios; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A507521D29E779AD00090B52 /* ContentViewTVOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewTVOS.swift; sourceTree = "<group>"; };
+		A507521F29E77A4900090B52 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		A52E43ED25C8903B0028EF38 /* RoundCorneredRectangle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundCorneredRectangle.swift; sourceTree = "<group>"; };
 		A5651EEF25C88A1A00DED5DC /* Plot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plot.swift; sourceTree = "<group>"; };
 		A580319125C7ADA1009756EB /* MurderBot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MurderBot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A580319425C7ADA1009756EB /* MurderBotApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MurderBotApp.swift; sourceTree = "<group>"; };
-		A580319625C7ADA1009756EB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A580319625C7ADA1009756EB /* ContentViewiOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewiOS.swift; sourceTree = "<group>"; };
 		A580319825C7ADA3009756EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A580319B25C7ADA3009756EB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A580319D25C7ADA3009756EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -35,8 +42,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A507522329E90EE200090B52 /* Shimmer in Frameworks */,
 				A58031AC25C7D2BF009756EB /* ActivityIndicatorView in Frameworks */,
 				A58031A625C7ADE4009756EB /* CardStack in Frameworks */,
+				A507522629E9122900090B52 /* SwiftfulLoadingIndicators in Frameworks */,
+				A53979B929E93C0100959763 /* ProgressIndicatorView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,7 +73,9 @@
 			isa = PBXGroup;
 			children = (
 				A580319425C7ADA1009756EB /* MurderBotApp.swift */,
-				A580319625C7ADA1009756EB /* ContentView.swift */,
+				A580319625C7ADA1009756EB /* ContentViewiOS.swift */,
+				A507521D29E779AD00090B52 /* ContentViewTVOS.swift */,
+				A507521F29E77A4900090B52 /* CardView.swift */,
 				A58031B425C7D9A7009756EB /* FilledButton.swift */,
 				A52E43ED25C8903B0028EF38 /* RoundCorneredRectangle.swift */,
 				A5651EEF25C88A1A00DED5DC /* Plot.swift */,
@@ -101,6 +113,9 @@
 			packageProductDependencies = (
 				A58031A525C7ADE4009756EB /* CardStack */,
 				A58031AB25C7D2BF009756EB /* ActivityIndicatorView */,
+				A507522229E90EE200090B52 /* Shimmer */,
+				A507522529E9122900090B52 /* SwiftfulLoadingIndicators */,
+				A53979B829E93C0100959763 /* ProgressIndicatorView */,
 			);
 			productName = SwiftTest2;
 			productReference = A580319125C7ADA1009756EB /* MurderBot.app */;
@@ -132,6 +147,9 @@
 			packageReferences = (
 				A58031A425C7ADE4009756EB /* XCRemoteSwiftPackageReference "SwiftUI-CardStackView" */,
 				A58031AA25C7D2BF009756EB /* XCRemoteSwiftPackageReference "ActivityIndicatorView" */,
+				A507522129E90EE200090B52 /* XCRemoteSwiftPackageReference "SwiftUI-Shimmer" */,
+				A507522429E9122900090B52 /* XCRemoteSwiftPackageReference "SwiftfulLoadingIndicators" */,
+				A53979B729E93C0100959763 /* XCRemoteSwiftPackageReference "ProgressIndicatorView" */,
 			);
 			productRefGroup = A580319225C7ADA1009756EB /* Products */;
 			projectDirPath = "";
@@ -159,10 +177,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A507522029E77A4900090B52 /* CardView.swift in Sources */,
 				A5651EF025C88A1A00DED5DC /* Plot.swift in Sources */,
-				A580319725C7ADA1009756EB /* ContentView.swift in Sources */,
+				A580319725C7ADA1009756EB /* ContentViewiOS.swift in Sources */,
 				A580319525C7ADA1009756EB /* MurderBotApp.swift in Sources */,
 				A58031B525C7D9A7009756EB /* FilledButton.swift in Sources */,
+				A507521E29E779AD00090B52 /* ContentViewTVOS.swift in Sources */,
 				A52E43EE25C8903B0028EF38 /* RoundCorneredRectangle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -303,8 +323,12 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.latenightsw.SwiftTest2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "appletvos appletvsimulator iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,3";
+				TVOS_DEPLOYMENT_TARGET = 15.0;
 			};
 			name = Debug;
 		};
@@ -325,8 +349,12 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.latenightsw.SwiftTest2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "appletvos appletvsimulator iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,3";
+				TVOS_DEPLOYMENT_TARGET = 15.0;
 			};
 			name = Release;
 		};
@@ -354,6 +382,30 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		A507522129E90EE200090B52 /* XCRemoteSwiftPackageReference "SwiftUI-Shimmer" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/markiv/SwiftUI-Shimmer.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		A507522429E9122900090B52 /* XCRemoteSwiftPackageReference "SwiftfulLoadingIndicators" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftfulThinking/SwiftfulLoadingIndicators.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.4;
+			};
+		};
+		A53979B729E93C0100959763 /* XCRemoteSwiftPackageReference "ProgressIndicatorView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/alldritt/ProgressIndicatorView.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 		A58031A425C7ADE4009756EB /* XCRemoteSwiftPackageReference "SwiftUI-CardStackView" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/dadalar/SwiftUI-CardStackView";
@@ -373,6 +425,21 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		A507522229E90EE200090B52 /* Shimmer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A507522129E90EE200090B52 /* XCRemoteSwiftPackageReference "SwiftUI-Shimmer" */;
+			productName = Shimmer;
+		};
+		A507522529E9122900090B52 /* SwiftfulLoadingIndicators */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A507522429E9122900090B52 /* XCRemoteSwiftPackageReference "SwiftfulLoadingIndicators" */;
+			productName = SwiftfulLoadingIndicators;
+		};
+		A53979B829E93C0100959763 /* ProgressIndicatorView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A53979B729E93C0100959763 /* XCRemoteSwiftPackageReference "ProgressIndicatorView" */;
+			productName = ProgressIndicatorView;
+		};
 		A58031A525C7ADE4009756EB /* CardStack */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = A58031A425C7ADE4009756EB /* XCRemoteSwiftPackageReference "SwiftUI-CardStackView" */;

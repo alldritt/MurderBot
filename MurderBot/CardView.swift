@@ -1,12 +1,11 @@
 //
-//  ContentView.swift
+//  CardView.swift
 //  MurderBot
 //
-//  Created by Mark Alldritt on 2021-01-31.
+//  Created by Mark Alldritt on 2023-04-12.
 //
 
 import SwiftUI
-import CardStack
 import ActivityIndicatorView
 
 
@@ -113,42 +112,5 @@ struct CardView: View {
                 .shadow(radius: cardShadowRadius)
             }
         }
-    }
-}
-
-
-struct ContentView: View {
-    @Environment(\.openURL) var openURL
-    @State var fetches = [Plot.Fetch(),  // seed the CardStack with some plots...
-                          Plot.Fetch(),
-                          Plot.Fetch(),
-                          Plot.Fetch(),
-                          Plot.Fetch(),
-                          Plot.Fetch(),
-                          Plot.Fetch()]
-
-    var body: some View {
-        VStack {
-            CardStack(
-                direction: EightDirections.direction,
-                data: fetches,
-                onSwipe: { plot, direction in
-                    fetches.append(Plot.Fetch())
-                },
-                content: { plot, direction, isOnTop in
-                    CardView(plotFetch: plot)
-                }
-            )
-            .padding(10)
-            FilledButton(title: "@midsomerplots") {
-                openURL(URL(string: "https://twitter.com/midsomerplots")!)
-            }
-        }
-    }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
     }
 }
