@@ -1,0 +1,18 @@
+{
+  "images" : [
+    {
+      "filename" : "Midsomer tvOS Top Shelf@1x.png",
+      "idiom" : "tv",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "Midsomer tvOS Top Shelf@2x.png",
+      "idiom" : "tv",
+      "scale" : "2x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

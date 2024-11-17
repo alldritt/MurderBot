@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "Midsomer tvOS@3x.png",
+      "idiom" : "tv"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

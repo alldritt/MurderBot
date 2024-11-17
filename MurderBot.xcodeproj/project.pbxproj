@@ -202,8 +202,9 @@
 		A580318925C7ADA1009756EB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1500;
-				LastUpgradeCheck = 1240;
+				LastUpgradeCheck = 1610;
 				TargetAttributes = {
 					A52B7ADB2AFC800C00932653 = {
 						CreatedOnToolsVersion = 15.0.1;
@@ -478,7 +479,6 @@
 		A58031A125C7ADA3009756EB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -487,6 +487,7 @@
 				DEVELOPMENT_TEAM = Z7S6X96M3X;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = MurderBot/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Murder Bot";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -508,7 +509,6 @@
 		A58031A225C7ADA3009756EB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -517,6 +517,7 @@
 				DEVELOPMENT_TEAM = Z7S6X96M3X;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = MurderBot/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Murder Bot";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
