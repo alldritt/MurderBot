@@ -3,27 +3,64 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A507521E29E779AD00090B52 /* ContentViewTVOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = A507521D29E779AD00090B52 /* ContentViewTVOS.swift */; platformFilters = (tvos, ); };
+		A507522029E77A4900090B52 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A507521F29E77A4900090B52 /* CardView.swift */; };
+		A507522629E9122900090B52 /* SwiftfulLoadingIndicators in Frameworks */ = {isa = PBXBuildFile; productRef = A507522529E9122900090B52 /* SwiftfulLoadingIndicators */; };
+		A52484272CE9AB890088C247 /* ZLSwipeableViewSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = A52484262CE9AB890088C247 /* ZLSwipeableViewSwiftUI */; };
+		A524842A2CE9AF4D0088C247 /* ProgressIndicatorView in Frameworks */ = {isa = PBXBuildFile; productRef = A52484292CE9AF4D0088C247 /* ProgressIndicatorView */; };
+		A52B7ADF2AFC800C00932653 /* TVServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A52B7ADE2AFC800C00932653 /* TVServices.framework */; };
+		A52B7AE22AFC800C00932653 /* ContentProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52B7AE12AFC800C00932653 /* ContentProvider.swift */; };
+		A52B7AE62AFC800C00932653 /* MurderBotTopShelf.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = A52B7ADC2AFC800C00932653 /* MurderBotTopShelf.appex */; platformFilters = (tvos, ); settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		A52E43EE25C8903B0028EF38 /* RoundCorneredRectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52E43ED25C8903B0028EF38 /* RoundCorneredRectangle.swift */; };
 		A5651EF025C88A1A00DED5DC /* Plot.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5651EEF25C88A1A00DED5DC /* Plot.swift */; };
 		A580319525C7ADA1009756EB /* MurderBotApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A580319425C7ADA1009756EB /* MurderBotApp.swift */; };
-		A580319725C7ADA1009756EB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A580319625C7ADA1009756EB /* ContentView.swift */; };
+		A580319725C7ADA1009756EB /* ContentViewiOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = A580319625C7ADA1009756EB /* ContentViewiOS.swift */; platformFilter = ios; };
 		A580319925C7ADA3009756EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A580319825C7ADA3009756EB /* Assets.xcassets */; };
 		A580319C25C7ADA3009756EB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A580319B25C7ADA3009756EB /* Preview Assets.xcassets */; };
-		A58031A625C7ADE4009756EB /* CardStack in Frameworks */ = {isa = PBXBuildFile; productRef = A58031A525C7ADE4009756EB /* CardStack */; };
 		A58031AC25C7D2BF009756EB /* ActivityIndicatorView in Frameworks */ = {isa = PBXBuildFile; productRef = A58031AB25C7D2BF009756EB /* ActivityIndicatorView */; };
-		A58031B525C7D9A7009756EB /* FilledButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58031B425C7D9A7009756EB /* FilledButton.swift */; };
+		A58031B525C7D9A7009756EB /* FilledButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58031B425C7D9A7009756EB /* FilledButton.swift */; platformFilter = ios; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		A52B7AE42AFC800C00932653 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A580318925C7ADA1009756EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A52B7ADB2AFC800C00932653;
+			remoteInfo = MurderBotTopShelf;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A52B7AE72AFC800C00932653 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A52B7AE62AFC800C00932653 /* MurderBotTopShelf.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		A507521D29E779AD00090B52 /* ContentViewTVOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewTVOS.swift; sourceTree = "<group>"; };
+		A507521F29E77A4900090B52 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		A52B7ADC2AFC800C00932653 /* MurderBotTopShelf.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MurderBotTopShelf.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A52B7ADE2AFC800C00932653 /* TVServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TVServices.framework; path = Library/Frameworks/TVServices.framework; sourceTree = DEVELOPER_DIR; };
+		A52B7AE12AFC800C00932653 /* ContentProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentProvider.swift; sourceTree = "<group>"; };
+		A52B7AE32AFC800C00932653 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A52E43ED25C8903B0028EF38 /* RoundCorneredRectangle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundCorneredRectangle.swift; sourceTree = "<group>"; };
 		A5651EEF25C88A1A00DED5DC /* Plot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plot.swift; sourceTree = "<group>"; };
 		A580319125C7ADA1009756EB /* MurderBot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MurderBot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A580319425C7ADA1009756EB /* MurderBotApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MurderBotApp.swift; sourceTree = "<group>"; };
-		A580319625C7ADA1009756EB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A580319625C7ADA1009756EB /* ContentViewiOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewiOS.swift; sourceTree = "<group>"; };
 		A580319825C7ADA3009756EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A580319B25C7ADA3009756EB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A580319D25C7ADA3009756EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -31,22 +68,51 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		A52B7AD92AFC800C00932653 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A52B7ADF2AFC800C00932653 /* TVServices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A580318E25C7ADA1009756EB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A524842A2CE9AF4D0088C247 /* ProgressIndicatorView in Frameworks */,
 				A58031AC25C7D2BF009756EB /* ActivityIndicatorView in Frameworks */,
-				A58031A625C7ADE4009756EB /* CardStack in Frameworks */,
+				A52484272CE9AB890088C247 /* ZLSwipeableViewSwiftUI in Frameworks */,
+				A507522629E9122900090B52 /* SwiftfulLoadingIndicators in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A52B7ADD2AFC800C00932653 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A52B7ADE2AFC800C00932653 /* TVServices.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A52B7AE02AFC800C00932653 /* MurderBotTopShelf */ = {
+			isa = PBXGroup;
+			children = (
+				A52B7AE12AFC800C00932653 /* ContentProvider.swift */,
+				A52B7AE32AFC800C00932653 /* Info.plist */,
+			);
+			path = MurderBotTopShelf;
+			sourceTree = "<group>";
+		};
 		A580318825C7ADA1009756EB = {
 			isa = PBXGroup;
 			children = (
 				A580319325C7ADA1009756EB /* MurderBot */,
+				A52B7AE02AFC800C00932653 /* MurderBotTopShelf */,
+				A52B7ADD2AFC800C00932653 /* Frameworks */,
 				A580319225C7ADA1009756EB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				A580319125C7ADA1009756EB /* MurderBot.app */,
+				A52B7ADC2AFC800C00932653 /* MurderBotTopShelf.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -63,7 +130,9 @@
 			isa = PBXGroup;
 			children = (
 				A580319425C7ADA1009756EB /* MurderBotApp.swift */,
-				A580319625C7ADA1009756EB /* ContentView.swift */,
+				A580319625C7ADA1009756EB /* ContentViewiOS.swift */,
+				A507521D29E779AD00090B52 /* ContentViewTVOS.swift */,
+				A507521F29E77A4900090B52 /* CardView.swift */,
 				A58031B425C7D9A7009756EB /* FilledButton.swift */,
 				A52E43ED25C8903B0028EF38 /* RoundCorneredRectangle.swift */,
 				A5651EEF25C88A1A00DED5DC /* Plot.swift */,
@@ -85,6 +154,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		A52B7ADB2AFC800C00932653 /* MurderBotTopShelf */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A52B7AEA2AFC800C00932653 /* Build configuration list for PBXNativeTarget "MurderBotTopShelf" */;
+			buildPhases = (
+				A52B7AD82AFC800C00932653 /* Sources */,
+				A52B7AD92AFC800C00932653 /* Frameworks */,
+				A52B7ADA2AFC800C00932653 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MurderBotTopShelf;
+			productName = MurderBotTopShelf;
+			productReference = A52B7ADC2AFC800C00932653 /* MurderBotTopShelf.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		A580319025C7ADA1009756EB /* MurderBot */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A58031A025C7ADA3009756EB /* Build configuration list for PBXNativeTarget "MurderBot" */;
@@ -92,15 +178,19 @@
 				A580318D25C7ADA1009756EB /* Sources */,
 				A580318E25C7ADA1009756EB /* Frameworks */,
 				A580318F25C7ADA1009756EB /* Resources */,
+				A52B7AE72AFC800C00932653 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A52B7AE52AFC800C00932653 /* PBXTargetDependency */,
 			);
 			name = MurderBot;
 			packageProductDependencies = (
-				A58031A525C7ADE4009756EB /* CardStack */,
 				A58031AB25C7D2BF009756EB /* ActivityIndicatorView */,
+				A507522529E9122900090B52 /* SwiftfulLoadingIndicators */,
+				A52484262CE9AB890088C247 /* ZLSwipeableViewSwiftUI */,
+				A52484292CE9AF4D0088C247 /* ProgressIndicatorView */,
 			);
 			productName = SwiftTest2;
 			productReference = A580319125C7ADA1009756EB /* MurderBot.app */;
@@ -112,9 +202,12 @@
 		A580318925C7ADA1009756EB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1240;
+				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
+					A52B7ADB2AFC800C00932653 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
 					A580319025C7ADA1009756EB = {
 						CreatedOnToolsVersion = 12.4;
 					};
@@ -130,19 +223,29 @@
 			);
 			mainGroup = A580318825C7ADA1009756EB;
 			packageReferences = (
-				A58031A425C7ADE4009756EB /* XCRemoteSwiftPackageReference "SwiftUI-CardStackView" */,
 				A58031AA25C7D2BF009756EB /* XCRemoteSwiftPackageReference "ActivityIndicatorView" */,
+				A507522429E9122900090B52 /* XCRemoteSwiftPackageReference "SwiftfulLoadingIndicators" */,
+				A52484252CE9AB890088C247 /* XCRemoteSwiftPackageReference "ZLSwipeableViewSwiftUI" */,
+				A52484282CE9AF4D0088C247 /* XCRemoteSwiftPackageReference "ProgressIndicatorView" */,
 			);
 			productRefGroup = A580319225C7ADA1009756EB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				A580319025C7ADA1009756EB /* MurderBot */,
+				A52B7ADB2AFC800C00932653 /* MurderBotTopShelf */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		A52B7ADA2AFC800C00932653 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A580318F25C7ADA1009756EB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -155,21 +258,107 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		A52B7AD82AFC800C00932653 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A52B7AE22AFC800C00932653 /* ContentProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A580318D25C7ADA1009756EB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A507522029E77A4900090B52 /* CardView.swift in Sources */,
 				A5651EF025C88A1A00DED5DC /* Plot.swift in Sources */,
-				A580319725C7ADA1009756EB /* ContentView.swift in Sources */,
+				A580319725C7ADA1009756EB /* ContentViewiOS.swift in Sources */,
 				A580319525C7ADA1009756EB /* MurderBotApp.swift in Sources */,
 				A58031B525C7D9A7009756EB /* FilledButton.swift in Sources */,
+				A507521E29E779AD00090B52 /* ContentViewTVOS.swift in Sources */,
 				A52E43EE25C8903B0028EF38 /* RoundCorneredRectangle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		A52B7AE52AFC800C00932653 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			platformFilters = (
+				tvos,
+			);
+			target = A52B7ADB2AFC800C00932653 /* MurderBotTopShelf */;
+			targetProxy = A52B7AE42AFC800C00932653 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		A52B7AE82AFC800C00932653 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z7S6X96M3X;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MurderBotTopShelf/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MurderBotTopShelf;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.latenightsw.MurderBot.TopShelf;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 15.6;
+			};
+			name = Debug;
+		};
+		A52B7AE92AFC800C00932653 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z7S6X96M3X;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MurderBotTopShelf/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MurderBotTopShelf;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.latenightsw.MurderBot.TopShelf;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 15.6;
+			};
+			name = Release;
+		};
 		A580319E25C7ADA3009756EB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -289,50 +478,75 @@
 		A58031A125C7ADA3009756EB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_ASSET_PATHS = "\"MurderBot/Preview Content\"";
 				DEVELOPMENT_TEAM = Z7S6X96M3X;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = MurderBot/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.latenightsw.SwiftTest2;
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.latenightsw.MurderBot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "appletvos appletvsimulator iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,3";
+				TVOS_DEPLOYMENT_TARGET = 15.6;
 			};
 			name = Debug;
 		};
 		A58031A225C7ADA3009756EB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_ASSET_PATHS = "\"MurderBot/Preview Content\"";
 				DEVELOPMENT_TEAM = Z7S6X96M3X;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = MurderBot/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.latenightsw.SwiftTest2;
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.latenightsw.MurderBot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "appletvos appletvsimulator iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,3";
+				TVOS_DEPLOYMENT_TARGET = 15.6;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		A52B7AEA2AFC800C00932653 /* Build configuration list for PBXNativeTarget "MurderBotTopShelf" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A52B7AE82AFC800C00932653 /* Debug */,
+				A52B7AE92AFC800C00932653 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A580318C25C7ADA1009756EB /* Build configuration list for PBXProject "MurderBot" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -354,12 +568,28 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		A58031A425C7ADE4009756EB /* XCRemoteSwiftPackageReference "SwiftUI-CardStackView" */ = {
+		A507522429E9122900090B52 /* XCRemoteSwiftPackageReference "SwiftfulLoadingIndicators" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/dadalar/SwiftUI-CardStackView";
+			repositoryURL = "https://github.com/SwiftfulThinking/SwiftfulLoadingIndicators.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 0.0.5;
+				minimumVersion = 0.0.4;
+			};
+		};
+		A52484252CE9AB890088C247 /* XCRemoteSwiftPackageReference "ZLSwipeableViewSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/alldritt/ZLSwipeableViewSwiftUI.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		A52484282CE9AF4D0088C247 /* XCRemoteSwiftPackageReference "ProgressIndicatorView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/exyte/ProgressIndicatorView.git";
+			requirement = {
+				branch = master;
+				kind = branch;
 			};
 		};
 		A58031AA25C7D2BF009756EB /* XCRemoteSwiftPackageReference "ActivityIndicatorView" */ = {
@@ -373,10 +603,20 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		A58031A525C7ADE4009756EB /* CardStack */ = {
+		A507522529E9122900090B52 /* SwiftfulLoadingIndicators */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = A58031A425C7ADE4009756EB /* XCRemoteSwiftPackageReference "SwiftUI-CardStackView" */;
-			productName = CardStack;
+			package = A507522429E9122900090B52 /* XCRemoteSwiftPackageReference "SwiftfulLoadingIndicators" */;
+			productName = SwiftfulLoadingIndicators;
+		};
+		A52484262CE9AB890088C247 /* ZLSwipeableViewSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A52484252CE9AB890088C247 /* XCRemoteSwiftPackageReference "ZLSwipeableViewSwiftUI" */;
+			productName = ZLSwipeableViewSwiftUI;
+		};
+		A52484292CE9AF4D0088C247 /* ProgressIndicatorView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A52484282CE9AF4D0088C247 /* XCRemoteSwiftPackageReference "ProgressIndicatorView" */;
+			productName = ProgressIndicatorView;
 		};
 		A58031AB25C7D2BF009756EB /* ActivityIndicatorView */ = {
 			isa = XCSwiftPackageProductDependency;
