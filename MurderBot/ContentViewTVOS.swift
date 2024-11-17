@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import Shimmer
 import SwiftfulLoadingIndicators
 import ProgressIndicatorView
 
@@ -50,9 +49,9 @@ struct ContentViewTVOS: View {
                                                             backgroundColor: .secondary.opacity(0.3)))
                             .frame(width: 26, height: 26)
                         Text("Next Murder Plot")
-                            .frame(height: 18)
+                            .font(.body)
+                            .foregroundColor(.primary)
                     }
-                    //.frame(minWidth: 400)
                 }
             }
             else {

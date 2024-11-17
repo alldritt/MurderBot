@@ -1,30 +1,22 @@
 {
+  "originHash" : "b95e90e75b3ffe9de845ead4bae1c757153ec66c24ba4f0cd81fce4b7b1f08df",
   "pins" : [
     {
       "identity" : "activityindicatorview",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/exyte/ActivityIndicatorView.git",
       "state" : {
-        "revision" : "ad484c6e645c41eb298e48f663ac1ed76aedde00",
-        "version" : "0.0.6"
+        "revision" : "04be6321d482f6bce9e3c9412e419831d88a5327",
+        "version" : "0.0.7"
       }
     },
     {
       "identity" : "progressindicatorview",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/alldritt/ProgressIndicatorView.git",
+      "location" : "https://github.com/exyte/ProgressIndicatorView.git",
       "state" : {
         "branch" : "master",
-        "revision" : "c0fca860bf62aaf20933aabdde071694aa537d3a"
-      }
-    },
-    {
-      "identity" : "swift-snapshot-testing",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/pointfreeco/swift-snapshot-testing.git",
-      "state" : {
-        "revision" : "c466812aa2e22898f27557e2e780d3aad7a27203",
-        "version" : "1.8.2"
+        "revision" : "f4734ae7323361802392cbce0ea741f75821bac0"
       }
     },
     {
@@ -37,23 +29,23 @@
       }
     },
     {
-      "identity" : "swiftui-cardstackview",
+      "identity" : "zlswipeableviewswift",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/dadalar/SwiftUI-CardStackView",
+      "location" : "https://github.com/zhxnlai/ZLSwipeableViewSwift.git",
       "state" : {
-        "revision" : "30f1b5d72a9c9e200080590e10eec852073487c1",
-        "version" : "0.0.5"
+        "branch" : "master",
+        "revision" : "4e694c883dec91f858eb5a2af5fd9ada3d2e47dc"
       }
     },
     {
-      "identity" : "swiftui-shimmer",
+      "identity" : "zlswipeableviewswiftui",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/markiv/SwiftUI-Shimmer.git",
+      "location" : "https://github.com/alldritt/ZLSwipeableViewSwiftUI.git",
       "state" : {
-        "revision" : "17b66b0e7d94d2d3f220bbcb021b5026436f06c7",
-        "version" : "1.3.0"
+        "branch" : "main",
+        "revision" : "53072519e2232dad9f90df744133a23cfa555a29"
       }
     }
   ],
-  "version" : 2
+  "version" : 3
 }

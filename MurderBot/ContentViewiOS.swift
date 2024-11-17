@@ -6,34 +6,21 @@
 //
 
 import SwiftUI
-import CardStack
+import ZLSwipeableViewSwiftUI
 
 
 struct ContentViewiOS: View {
     @Environment(\.openURL) var openURL
-    @State var fetches = [Plot.Fetch(),  // seed the CardStack with some plots...
-                          Plot.Fetch(),
-                          Plot.Fetch(),
-                          Plot.Fetch(),
-                          Plot.Fetch(),
-                          Plot.Fetch(),
-                          Plot.Fetch()]
 
     var body: some View {
         VStack {
-            CardStack(
-                direction: EightDirections.direction,
-                data: fetches,
-                onSwipe: { plot, direction in
-                    fetches.append(Plot.Fetch())
-                },
-                content: { plot, direction, isOnTop in
-                    CardView(plotFetch: plot)
-                }
-            )
-            .padding(10)
+            SwipeableView() {
+                CardView(plotFetch: Plot.Fetch())
+            }
+            .numberOfActiveView(6)
+            .padding()
             FilledButton(title: "@midsomerplots") {
-                openURL(URL(string: "https://twitter.com/midsomerplots")!)
+                openURL(URL(string: "https://midsomerplots.net")!)
             }
         }
     }

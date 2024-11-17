@@ -17,12 +17,14 @@ struct CardOverlay: View {
     var body: some View {
         ZStack {
             Text(text)
-                .font(.body)
+                .font(.caption)
                 .padding(EdgeInsets(top: 5, leading: 7, bottom: 5, trailing: 9))
                 .foregroundColor(.black)
         }
-        .background(RoundCorneredRectangle(tl: 8, tr: 0, bl: 0, br: 12)
-                        .fill(Color.white.opacity(0.65)))
+        .background(
+            RoundCorneredRectangle(tl: 8, tr: 0, bl: 0, br: 12)
+                .fill(Color.white.opacity(0.65))
+        )
     }
 }
 
